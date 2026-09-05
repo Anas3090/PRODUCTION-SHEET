@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <title>Production Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Production Dashboard</h1>
+    <a href="add.html" class="btn">Add Data</a>
   </header>
 
   <main>
-    <table>
+    <table id="dashboard">
       <thead>
         <tr>
           <th>WORK DATE</th>
@@ -26,16 +28,20 @@
           <th>TOTAL</th>
           <th>STATUS</th>
           <th>PERCENT</th>
+          <th>ACTIONS</th>
         </tr>
       </thead>
       <tbody id="dataRows"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="9" style="text-align:right;"><strong>WD - 21 DAYS</strong></td>
+          <td id="totalSum"></td>
+          <td></td>
+          <td id="avgPercent"></td>
+          <td></td>
+        </tr>
+      </tfoot>
     </table>
   </main>
-
-  <footer>
-    <p>© 2026 Production Tracker</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
