@@ -4,30 +4,27 @@
   <meta charset="UTF-8">
   <title>Add Production Data</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Add Daily Data</h1>
+    <a href="index.html" class="btn">View Dashboard</a>
   </header>
 
   <main>
     <form id="dataForm">
-      <label>Work Date: <input type="date" name="workDate"></label><br>
-      <label>CO-186: <input type="number" name="co186"></label><br>
-      <label>CO-252: <input type="number" name="co252"></label><br>
-      <label>210: <input type="number" name="c210"></label><br>
-      <label>18626: <input type="number" name="c18626"></label><br>
-      <label>ANTHEM: <input type="number" name="anthem"></label><br>
-      <label>HUMANA: <input type="number" name="humana"></label><br>
-      <label>UHC: <input type="number" name="uhc"></label><br>
-      <label>ROI: <input type="number" name="roi"></label><br>
-      <label>TOTAL: <input type="number" name="total"></label><br>
-      <label>STATUS: <input type="text" name="status"></label><br>
-      <label>PERCENT: <input type="number" name="percent"></label><br>
-      <button type="submit">Save</button>
+      <label>Work Date: <input type="date" id="workDate" required></label>
+      <label>CO-186: <input type="number" id="co186"></label>
+      <label>CO-252: <input type="number" id="co252"></label>
+      <label>210: <input type="number" id="c210"></label>
+      <label>18626: <input type="number" id="c18626"></label>
+      <label>ANTHEM: <input type="number" id="anthem"></label>
+      <label>HUMANA: <input type="number" id="humana"></label>
+      <label>UHC: <input type="number" id="uhc"></label>
+      <label>ROI: <input type="number" id="roi"></label>
+      <button type="submit">Save Data</button>
     </form>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
