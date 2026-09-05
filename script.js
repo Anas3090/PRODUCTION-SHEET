@@ -79,4 +79,6 @@ function editEntry(index) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const params
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("edit")) {
+    const
